@@ -44,7 +44,7 @@ reflex run
 ```
 
 ## How It Works
-The AI Research Assistant uses two specialized agents:
+The Agentic Blogger uses two specialized agents:
 
 1. **Research Agent**:
 - Searches for the most relevant and recent information
