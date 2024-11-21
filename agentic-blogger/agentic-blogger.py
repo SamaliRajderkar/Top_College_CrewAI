@@ -32,6 +32,10 @@ class State(rx.State):
     async def process_research(self, form_data: dict[str, str]):
         """Process the research request using CrewAI."""
         query_text: str = form_data["query_text"]
+
+        if not query_text:
+            rx.toast("Please enter a topic to process.")
+            return
         
         # Reset states
         self.result_ready = False
@@ -122,16 +126,16 @@ class State(rx.State):
 def index():
     return rx.center(
         rx.vstack(
-            rx.heading("AI Research Assistant", font_size="1.5em"),
+            rx.heading("AI Blog Agent", font_size="1.5em"),
             rx.form(
                 rx.vstack(
                     rx.input(
                         id="query_text",
-                        placeholder="Enter a research topic...",
+                        placeholder="Enter your topic...",
                         size="3",
                     ),
                     rx.button(
-                        "Research Topic",
+                        "Process",
                         type="submit",
                         size="3",
                     ),
@@ -178,4 +182,4 @@ app = rx.App(
         accent_color="blue",
     ),
 )
-app.add_page(index, title="AI Research")
+app.add_page(index, title="Agentic Blogger")
