@@ -1,4 +1,4 @@
-# AI Research Assistant
+# Agentic Blogger
 
 An intelligent research and writing tool built with Reflex, Imagine SDK and CrewAI that allows users to research a topic and generate a concise, well-structured blog post using advanced AI-powered research and writing agents.
 
