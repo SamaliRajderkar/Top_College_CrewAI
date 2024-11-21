@@ -1,0 +1,7 @@
+crewai[tools]==0.55.2
+langchain-core==0.3.0
+langchain-openai==0.2.0
+langchain-community==0.3.0
+reflex==0.6.5
+duckduckgo_search==6.3.5
+imagine_sdk-0.4.1-py3-none-any.whl
