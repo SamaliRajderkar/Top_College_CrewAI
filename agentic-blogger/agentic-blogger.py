@@ -1,3 +1,12 @@
+'''
+.env file
+
+GROQ_API_KEY="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"
+GROQ_API_URL="https://api.groq.com/openai/v1/chat/completions"
+
+'''
+
+
 import reflex as rx
 from crewai_tools import tool
 from crewai import Agent, Crew, Process, Task
